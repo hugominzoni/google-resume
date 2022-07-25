@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 100%;
+    background-color: #fff;
+}
+
+nav{
+    height: 150px;
+    /* background-color: crimson; */
+    display: grid;
+    grid-row: 1fr 1fr;
+    border-bottom: 1px solid #76767638;
+    padding-top: 20px;
+    
+}
+
+.search{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 200px 4fr .5fr;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo{
+    max-width: 200px;
+    margin-right: 40px;
+    padding-left: 30px;
+}
+
+.logo img{
+    width: 120px;
+}
+
+.search-bar{
+    width: 700px;
+    height: 48px;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    padding: 2px 20px;
+}
+
+.search-bar--keyword{
+    color: #333;
+    font-weight: 300;
+}
+
+.search-bar--icons{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.search-bar--icons i{
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.fa-xmark,
+.fa-microphone{
+    color: #767676;
+}
+
+.search-bar--icons span{
+    content: "";
+    height: 30px;
+    width: 1px;
+    background-color: #7676765c;
+    margin-left: 30px;
+}
+
+.fa-magnifying-glass{
+    color: #4285f4;
+}
+
+
+.search-user{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: orangered;
+    display: grid;
+}
+
+.search-user p{
+    margin: auto;
+    color: #fff;
+}
+
+.info{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 200px;
+    font-size: 14px;
+    padding-bottom: 15px;
+}
+
+.name,
+.email,
+.location,
+.phone{
+    margin-right: 30px;
+    color: #767676;
+}
+
+.name{
+    position: relative;
+}
+
+.name::after{
+    content: "";
+    width: 115px;
+    height: 3px;
+    position: absolute;
+    bottom: -15px;
+    background-color: #4285f4;
+}
+
+.fa-image,
+.fa-location-dot,
+.fa-mobile-screen,
+.gl{
+    margin-right: 10px;
+}
+
+/*****************************************
+
+EXPERIENCES
+
+********************************************/
+
+section{
+    padding: 0 200px;
+}
+
+main{
+    padding-right: 40px;
+}
+
+.result-time{
+    padding: 20px 0 0 0;
+    color: #767676;
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+.experiences{
+    padding: 20px 40px 20px 0;
+}
+
+.exp{
+    margin: 30px 0;
+}
+
+.exp h1{
+    color: #1A0EAB;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.exp h5,
+.exp h1{
+    margin: 10px 0;
+}
+
+.exp p{
+    line-height: 1.6;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+/*****************************************
+
+ASIDE
+
+********************************************/
+
+section{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+aside{
+    margin-top: 100px;
+    border: 1px solid #76767638;
+    border-radius: 10px;
+    padding: 20px;
+    color: #202124;
+}
+
+.skills,
+.certificates,
+.language{
+    margin-bottom: 30px;
+    border-bottom: 1px solid #76767638;
+    padding-bottom: 20px;
+
+}
+
+.skills p,
+.certificates p,
+.language p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.6;
+    
+}
+
+.aside-head{
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*****************************************
+
+PORTFOLIO
+
+********************************************/
+
+.portfolio{
+    /* background-color: chartreuse; */
+    margin-bottom: 40px;
+}
+
+.port-h3{
+    margin: 10px 0;
+}
+
+.port-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    position: relative;
+}
+
+.port-content-box{
+    border-right: 1px solid #76767638;
+    padding-right: 30px;
+}
+
+.port-content-box h4{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.port-content-box p{
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.port-content-box img{
+    max-width: 260px;
+    height: 110px;
+    border: 1px solid #76767638;;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.port-content::after{
+    position: absolute;
+    content: "→";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #76767634;
+    right: -20px;
+    top: 50%;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+}
