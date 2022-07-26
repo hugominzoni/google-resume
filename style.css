@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 62.5%;
+}
+
 a{
     text-decoration: none;
     color: #000;
@@ -31,37 +35,42 @@ nav{
 .search{
     width: 100%;
     display: grid;
-    grid-template-columns: 200px 4fr .5fr;
+    grid-template-columns: 20rem 4fr .5fr;
     align-items: center;
     justify-content: space-between;
     
 }
 
 .logo{
-    max-width: 200px;
-    margin-right: 40px;
-    padding-left: 30px;
+    max-width: 20rem;
+    margin-right: 4rem;
+    padding-left: 3rem;
 }
 
 .logo img{
-    width: 120px;
+    width: 12rem;
 }
 
 .search-bar{
-    width: 700px;
-    height: 48px;
-    border-radius: 30px;
+    width: 70rem;
+    height: 4.8rem;
+    border-radius: 3rem;
     background-color: #fff;
     box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
     display: grid;
     grid-template-columns: 60% 40%;
     align-items: center;
-    padding: 2px 20px;
+    padding: .2rem 2rem;
 }
 
 .search-bar--keyword{
     color: #333;
     font-weight: 300;
+    
+}
+
+.search-bar--keyword p{
+    font-size: 1.5rem;
 }
 
 .search-bar--icons{
@@ -72,8 +81,8 @@ nav{
 }
 
 .search-bar--icons i{
-    font-size: 18px;
-    margin-left: 20px;
+    font-size: 1.9rem;
+    margin-left: 2rem;
 }
 
 .fa-xmark,
@@ -81,39 +90,53 @@ nav{
     color: #767676;
 }
 
+
 .search-bar--icons span{
     content: "";
-    height: 30px;
+    height: 3rem;
     width: 1px;
     background-color: #7676765c;
-    margin-left: 30px;
+    margin-left: 3rem;
 }
 
 .fa-magnifying-glass{
     color: #4285f4;
 }
 
+.user{
+    width: 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 4rem;
+}
+
+.user i{
+    font-size: 2.2rem;
+    color: #767676;
+}
 
 .search-user{
-    width: 45px;
-    height: 45px;
+    width: 4.5rem;
+    height: 4.5rem;
     border-radius: 50%;
-    background-color: orangered;
+    background-color: #633393;
     display: grid;
 }
 
 .search-user p{
     margin: auto;
     color: #fff;
+    font-size: 1.5rem;
 }
 
 .info{
     width: 100%;
     display: flex;
     align-items: flex-end;
-    padding-left: 200px;
-    font-size: 14px;
-    padding-bottom: 15px;
+    padding-left: 20rem;
+    font-size: 1.4rem;
+    padding-bottom: 1.5rem;
 }
 
 .name,
@@ -130,18 +153,18 @@ nav{
 
 .name::after{
     content: "";
-    width: 115px;
-    height: 3px;
+    width: 11.5rem;
+    height: .3rem;
     position: absolute;
-    bottom: -15px;
+    bottom: -1.5rem;
     background-color: #4285f4;
 }
 
-.fa-image,
+.fa-envelope-open-text,
 .fa-location-dot,
 .fa-mobile-screen,
 .gl{
-    margin-right: 10px;
+    margin-right: 1.2rem;
 }
 
 /*****************************************
@@ -161,13 +184,18 @@ main{
 .result-time{
     padding: 20px 0 0 0;
     color: #767676;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 300;
 
 }
 
 .experiences{
     padding: 20px 40px 20px 0;
+}
+
+.experiences h2,
+.port-h2{
+    font-size: 2.4rem;
 }
 
 .exp{
@@ -177,19 +205,25 @@ main{
 .exp h1{
     color: #1A0EAB;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 2.0rem;
     font-weight: 100;
 }
 
 .exp h5,
 .exp h1{
     margin: 10px 0;
+
 }
+
+.exp h5{
+    font-size: 1.3rem;
+}
+
 
 .exp p{
     line-height: 1.6;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 1.5rem;
 }
 
 /*****************************************
@@ -223,7 +257,7 @@ aside{
 .skills p,
 .certificates p,
 .language p{
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 300;
     line-height: 1.6;
     
@@ -232,6 +266,7 @@ aside{
 .aside-head{
     margin-bottom: 15px;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.4rem;
 }
 
 
@@ -248,6 +283,7 @@ PORTFOLIO
 
 .port-h3{
     margin: 10px 0;
+    font-size: 1.8rem;
 }
 
 .port-content{
@@ -264,11 +300,11 @@ PORTFOLIO
 
 .port-content-box h4{
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .port-content-box p{
-    font-size: 13px;
+    font-size: 1.3rem;
     font-weight: 300;
     line-height: 1.6;
 }
@@ -296,4 +332,5 @@ PORTFOLIO
     align-items: center;
     justify-content: center;
     transform: translateY(-50%);
+    font-size: 1.5rem;
 }
