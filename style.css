@@ -418,7 +418,7 @@ MOBILE VERSION
 
 **************************************/
 
-@media all and (max-width: 440px){    
+@media all and (max-width: 576px){    
     .body{
         width: 100vw;
         background-color: green;
