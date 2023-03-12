@@ -54,18 +54,11 @@ for(let i = 0; i < imageThumb.length;i++){
     })
 
 
-closeBox.addEventListener('click', function(){
-    imgBig[i].classList.add('hidden')
-    imageBox.classList.add('hidden')
-    overlay.classList.add('hidden')
-    closeBox.classList.add('hidden')
-})
-
-overlay.addEventListener('click', function(){
-    imgBig[i].classList.remove('hidden')
-    imageBox.classList.add('hidden')
-    overlay.classList.add('hidden')
-    closeBox.classList.add('hidden')
-})
+    closeBox.addEventListener('click', function(){
+        imgBig[i].classList.add('hidden')
+        imageBox.classList.add('hidden')
+        overlay.classList.add('hidden')
+        closeBox.classList.add('hidden')
+    })
 
 }
